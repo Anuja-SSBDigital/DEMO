@@ -1,0 +1,23 @@
+name: ASPX Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  package:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@v4
+
+    - name: Zip website
+      run: powershell Compress-Archive -Path * -DestinationPath website.zip
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: website
+        path: website.zip
