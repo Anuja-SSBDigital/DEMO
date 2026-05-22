@@ -20,6 +20,7 @@
 
         <!-- JavaScript for Live Updates -->
         <script type="text/javascript">
+		
             function fetchLiveProgress() {
                 $.ajax({
                     url: "index.aspx/GetProgress",
