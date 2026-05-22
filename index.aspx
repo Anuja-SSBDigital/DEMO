@@ -18,6 +18,8 @@
         <!-- Progress Display -->
         <h2>Progress: <span id="progress">0</span> / 1000000</h2>
 
+
+
         <!-- JavaScript for Live Updates -->
         <script type="text/javascript">
 		
